@@ -38,7 +38,7 @@ function App() {
     <div className='galaxy-background min-h-screen flex items-center justify-center'>
       <StarsCanvas />
       <div className='relative z-10 w-full max-w-lg mx-auto shadow-2xl rounded-2xl px-8 py-10 bg-gray-800 border-4 border-blue-500'>
-        <h2 className='text-center text-white mb-10 animate-bounce'>Password Generator</h2>
+        <h2 className='text-center text-white mb-10 animate-bounce font-serif text-2xl'>Password Generator</h2>
         <div className='flex shadow-md rounded-lg overflow-hidden mb-4'>
           <input
             type="text"
@@ -67,7 +67,9 @@ function App() {
             />
             <label className='text-white'>Length: {length}</label>
           </div>
+           <h3 className=' text-white'>Optimization option :</h3>
           <div className='flex items-center gap-x-2'>
+           
             <input
               type="checkbox"
               id="NumberInput"
@@ -85,7 +87,7 @@ function App() {
               onChange={() => setCharAllowed(prev => !prev)}
               className='cursor-pointer'
             />
-            <label htmlFor="CharInput" className='text-white'>Characters</label>
+            <label htmlFor="CharInput" className='text-white'>Special Characters</label>
           </div>
         </div>
       </div>
